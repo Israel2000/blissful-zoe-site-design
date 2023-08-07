@@ -7,6 +7,7 @@
 .flex-container {
   display: flex;
   justify-content: flex-end;
+  margin-right: 78px;
 }
 
 .flex-item {
@@ -31,10 +32,25 @@
   outline: none;
   width: 100%;
   padding: 5px;
-  background-color: rgb(31, 220, 31);
+  background-color: #bff3d0;
 }
 
-//
+//nav css
+.navbar-brand {
+  font-family: "Borel", cursive;
+  font-size: 35px;
+  color: black;
+}
+.gold-line {
+  border-bottom: 3px solid #f1cd0a;
+  padding: 0 0 4px;
+  margin-top: 14px;
+  margin-left: 95px;
+}
+
+.custom-navbar {
+  background-color: #bff3d0 !important;
+}
 .nav-bar {
   width: 100%;
   display: flex;
@@ -79,6 +95,9 @@ li.nav-item {
   font-size: 18px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }

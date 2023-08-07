@@ -1,229 +1,80 @@
-<style>
-  /* Custom styles for the button */
-  .custom-button {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #90c402 !important;
-    /* Green background color */
-    color: #ffffff;
-    /* White text color */
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Shadow effect */
-    cursor: pointer;
-  }
+<div class="image-container">
+  <img src="assets/pic-top1.svg" alt="" class="centered-image" />
+</div>
 
+<!-- welcome  -->
+<div class="welcome-text">
+  <h3 class="card-title fs-1 mt-4" style="text-align: center">
+    Welcome to Blissful Zoe
+  </h3>
+  <p class="" style="text-align: center">
+    Thank you for taking the time to visit our page. We value Your interest and
+    hope you had a pleasant experience exploring Our products.
+  </p>
+</div>
 
+<div>
+  <h4>Best Selling Items</h4>
+</div>
 
-  /* Center the text inside the card body */
-  .card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* Add cool shadow to the cards */
-  .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    /* Optional: Adjust shadow properties for your preferred look */
-    border-radius: 9px;
-  }
-
-  p>img {
-    padding-left: 24px;
-  }
-
-  .heights-css {
-    height: 100px;
-  }
-
-  .heights-css:hover {
-    color: #90c402;
-  }
-
-  .accordion-item {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  }
-
-  .centered-image {
-    display: block;
-    margin: auto;
-  }
-</style>
-
-<div class="container" style="min-width: 100%;">
-  <!-- Single row with two columns -->
+<div class="container mt-5">
   <div class="row">
-    <div class="col-12 col-md-6 left-image">
-      <!-- Content for the first column -->
-      <div class="col">
-        <!-- Sentence to be centered -->
-        <h2 class=" responsive-text text-wrap">Transportation with care and reliability.
-        </h2>
-        <p class="contact-text" style="">Contact us for a ride!</p>
-        <div class="container mt-5 btn-container">
-          <!-- Create a primary button -->
-          <button type="button" class="btn btn-primary custom-button">
-            <a class="nav-link" routerLink="/book-a-ride" [routerLinkActive]="['active']">Book-A-RIde</a>
-
-          </button>
+    <div class="col-md-3">
+      <div class="card">
+        <img
+          src="https://via.placeholder.com/150"
+          class="card-img-top"
+          alt="Image 1"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card 1</h5>
+          <p class="card-text">Some content for Card 1.</p>
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 right-side-pic">
-      <!-- Content for the second column -->
-      <img src="assets/section-pic.png" class="img-fluid centered-image" alt="Responsive Image" width="100%">
-    </div>
-  </div>
-</div>
-
-<!-- our service -->
-<h3 class="card-title fs-1 mt-4" style="text-align: center">Our Service</h3>
-<p style="text-align: center;">Count on our dependable transportation solutions to provide hassle-free outpatient rides,
-  <br> allowing you to focus on your health while we take care of the transportation requirement.
-</p>
-<div class="container mt-5 mb-4">
-  <div class="row row-cols-1 row-cols-md-5">
-    <div class="col mb-4">
+    <div class="col-md-3">
       <div class="card">
-        <div class="card-body">Appointment</div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <div class="card-body">Hospital Discharges</div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <div class="card-body">Behavioral Health Visits</div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <div class="card-body">Child Health Visit</div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <div class="card-body">Lab Appointment</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- cards with images -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-      <div class="card">
-        <img src="/assets/NoPath_-_Copy_2@2x.png" class="card-img-top" alt="Image 1" />
-        <div class="card-body heights-css">
-          <h5 class="card-title">Outpatient Clinic</h5>
-          <a routerLink="/book-a-ride" style="">
-            <p class="card-text"><img src="/assets/arrow.svg" /></p>
-          </a>
-
+        <img
+          src="https://via.placeholder.com/150"
+          class="card-img-top"
+          alt="Image 2"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">Some content for Card 2.</p>
         </div>
       </div>
     </div>
-
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+    <div class="col-md-3">
       <div class="card">
-        <img src="assets/pexels-matthias-zomer-339620.png" class="card-img-top" alt="Image 2" />
-        <div class="card-body heights-css">
-          <h5 class="card-title">Physical Therapy</h5>
-          <a routerLink="/book-a-ride">
-            <p class="card-text"><img src="/assets/arrow.svg" /></p>
-          </a>
+        <img
+          src="https://via.placeholder.com/150"
+          class="card-img-top"
+          alt="Image 3"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card 3</h5>
+          <p class="card-text">Some content for Card 3.</p>
         </div>
       </div>
     </div>
-
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+    <div class="col-md-3">
       <div class="card">
-        <img src="assets/NoPath.png" class="card-img-top" alt="Image 3" />
-        <div class="card-body heights-css">
-          <h5 class="card-title">Parental Appointment</h5>
-          <a routerLink="/book-a-ride">
-            <p class="card-text"><img src="/assets/arrow.svg" /></p>
-          </a>
+        <img
+          src="https://via.placeholder.com/150"
+          class="card-img-top"
+          alt="Image 4"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card 4</h5>
+          <p class="card-text">Some content for Card 4.</p>
         </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-      <div class="card">
-        <img src="assets/NoPath_-_Copy.png" class="card-img-top" alt="Image 4" />
-        <div class="card-body heights-css">
-          <h5 class="card-title">Dialysis Treatment</h5>
-          <a routerLink="/book-a-ride">
-            <p class="card-text"><img src="/assets/arrow.svg" /></p>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-      <div class="card">
-        <img src="assets/pexels-polina-tankilevitch-3735709.jpg" class="card-img-top" alt="Image 5"
-          style="height: 242px" />
-        <div class="card-body heights-css">
-          <h5 class="card-title">Radiation/Lab Appt</h5>
-          <a routerLink="/book-a-ride">
-            <p class="card-text"><img src="/assets/arrow.svg" /></p>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-      <div class="card">
-        <img src="assets/pexels-anna-shvets-3845806.png" class="card-img-top" alt="Image 6" />
-        <div class="card-body heights-css">
-          <h5 class="card-title">Dental Clinics</h5>
-          <p class="card-text"><img src="/assets/arrow.svg" /></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- two sections - desc details on the trans. company -->
-<div class="welcome-css">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 d-flex flex-column justify-content-center" style="margin-top: 10px">
-        <!-- Content for Section 1 goes here -->
-        <p style="line-height: 2.5;">
-          Welcome to Springs NEMT website, where reliable transportation meets
-          compassionate care. We are dedicated to providing safe and accessible
-          transportation solutions for your non-emergency medical needs. ​ NEMT
-          in Colorado refers to Non-Emergency Medical Transportation services
-          available in the state. It provides safe and reliable transportation
-          for individuals who require assistance or specialized transportation
-          to attend medical appointments, treatments, or healthcare facilities.
-          ​ Our exceptional service in Colorado Spring area only. thank you for
-          visitng our site!
-        </p>
-      </div>
-
-      <div class="col-md-6 d-flex flex-column justify-content-center text-light video-css">
-        <!-- Content for Section 2 goes here -->
-        <video controls width="100%" style="border-radius: 8px; height: 400px">
-          <source src="assets/NEMT - SD 480p.mov" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       </div>
     </div>
   </div>
 </div>
 
 <!-- FAQ -->
-<div #faq>
+<!-- <div #faq>
   <app-faq></app-faq>
-</div>
+</div> -->

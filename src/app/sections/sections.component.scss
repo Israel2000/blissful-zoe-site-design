@@ -1,47 +1,28 @@
-.nav-link {
-  color: white;
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px; /* Adjust as needed */
 }
 
-.right-side-pic {
-  padding: 0px;
+.centered-image {
+  max-width: calc(100% - 200px); /* 200px on each side */
+  margin-bottom: 133px;
 }
 
-.left-image {
-  background-color: #ffd100;
-  display: grid;
-  place-items: center;
-}
-.responsive-text {
-  font-size: 70px;
-  margin-left: 87px;
+.card-title,
+.welcome-text {
+  font-family: "Borel", cursive;
 }
 
-.contact-text {
-  margin-left: 85px;
-  text-align: left;
-  font-size: 28px;
+.welcome-text {
+  margin-top: -101px;
 }
 
-/* Hover effect */ /* Increase shadow on hover */
-.custom-button:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+h4 {
+  margin-left: 101px;
 }
-.btn-container {
-  margin-left: 63px;
-}
-
-// video & welcome section
-.welcome-css {
-  background-color: #eeeeee;
-  height: 480px;
-  width: 100%;
-  margin-top: 20px;
-}
-
-//accordion
-.accordion {
-  // padding: 15px 185px;
-}
+// ------------end
 
 @media (max-width: 1024px) {
   .responsive-text {
