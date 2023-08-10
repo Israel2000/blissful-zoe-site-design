@@ -1,16 +1,25 @@
-.bg-secondary {
-    background-color: #fff !important;
+.foooter-css {
+  background-color: #f9f9f9;
+  height: 800px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #777777;
+}
+.col-md-4 {
+  width: 400px;
 }
 
-.btn-primary {
-    color: black;
-    background-color: white;
-    border-color: #ced4da;
+.col-md-3 {
+  width: 350px;
 }
 
-.btn-primary:hover {
-    color: white;
-    background-color: black;
-    border-color: #ced4da;
+.col2 {
+  width: 350px !important;
 }
 
+//
+ul {
+  list-style: none;
+}
