@@ -6,8 +6,8 @@
 }
 
 .centered-image {
-  max-width: calc(100% - 200px); /* 200px on each side */
-  margin-bottom: 133px;
+  min-width: calc(100% - 200px); /* 200px on each side */
+  // margin-bottom: 33px;
 }
 
 .card-title,
@@ -15,12 +15,27 @@
   font-family: "Borel", cursive;
 }
 
-.welcome-text {
-  margin-top: -101px;
+.text-green {
+  color: #29a621;
 }
 
-h4 {
-  margin-left: 101px;
+h2 {
+  margin-left: 73px;
+}
+
+// <!--shiipend info-->
+/* Custom CSS for centered flexbox row */
+.flex-row {
+  display: flex;
+  align-items: center; /* Center-align the content vertically */
+}
+
+.flex-column {
+  flex: 1;
+  padding: 10px;
+  background-color: #f0f0f09c;
+  // border: 1px solid #ddd;
+  text-align: center; /* Center-align the content horizontally */
 }
 // ------------end
 

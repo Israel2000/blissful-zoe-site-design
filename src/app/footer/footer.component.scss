@@ -1,6 +1,6 @@
 .foooter-css {
   background-color: #f9f9f9;
-  height: 800px;
+  // height: 800px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -16,10 +16,24 @@
 }
 
 .col2 {
-  width: 350px !important;
+  width: 340px !important;
 }
 
 //
 ul {
   list-style: none;
+  line-height: 2;
+}
+
+h4 {
+  color: black;
+  font-size: 19px;
+}
+
+h3 {
+  color: black;
+}
+
+p {
+  line-height: 2;
 }
