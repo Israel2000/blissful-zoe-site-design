@@ -1,0 +1,178 @@
+<style>
+  .gray-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;
+    /* Gray background color */
+    width: 100%;
+    height: 100px;
+    padding-left: 72px;
+    /* Adding some padding for better appearance */
+  }
+</style>
+<div class="gray-background">
+  <h5>Product</h5>
+</div>
+
+<div class="container mb-4">
+  <div class="row">
+    <div class="col-md-6 mt-4">
+      <div
+        class="bg-white shadow p-4"
+        style="height: 500px; border-radius: 5px"
+      >
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <img
+              src="assets/mendress1.jpg"
+              alt="Centered Image"
+              width="400px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mt-4">
+      <div class="">
+        <!-- <div class="bg-white shadow" style="border-radius: 5px"></div> -->
+        <div class="bg-white shadow" style="height: 580px; border-radius: 5px">
+          <div class="container">
+            <h4 class="p-2">MEN BLUE SHIRT</h4>
+            <label class="p-2">Price:</label>
+            <h4 class="pl-2">
+              $32.96 <del class="text-grey">$45.45</del>
+              <span class="text-muted p-2">10%</span>
+            </h4>
+          </div>
+
+          <div class="p-2">
+            <div class="container">
+              <label>Color choice:</label>
+              <div class="circle-container">
+                <div class="circle" style="background-color: green"></div>
+                <div class="circle" style="background-color: beige"></div>
+                <div class="circle" style="background-color: red"></div>
+              </div>
+              <hr class="dotted-hr" />
+            </div>
+
+            <div class="container">
+              <label>Select Size:</label>
+              <div class="circle-container">
+                <div class="circle">S</div>
+                <div class="circle">L</div>
+                <div class="circle">XL</div>
+              </div>
+              <hr class="dotted-hr" />
+            </div>
+
+            <!-- <h6>Quantity :</h6> -->
+            <div class="container mt-2">
+              <label for="quantity">Quantity:</label>
+              <div class="input-group mt-2" style="width: 127px">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  (click)="decrement()"
+                >
+                  -
+                </button>
+                <input
+                  type="number"
+                  class="form-control text-center"
+                  id="quantity"
+                  [(ngModel)]="quantity"
+                  min="1"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  (click)="increment()"
+                >
+                  +
+                </button>
+              </div>
+              <button
+                class="btn mt-5"
+                style="background-color: #89f7ad; color: white; width: 175px"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- discrption for item selected in bottom -->
+
+<div class="container mt-3">
+  <!-- <h2>Toggleable Pills</h2> -->
+  <!-- <br /> -->
+  <!-- Nav pills -->
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="pill" href="#details"
+        >DETAILS</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#spec">SPECIFICATION</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#video">VIDEO</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#write">WRITE REVIEW</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="details" class="container tab-pane active">
+      <br />
+      <!-- <h3>HOME</h3> -->
+      <p>
+        The Model is wearing a white blouse from our stylist's collection, see
+        the image for a mock-up of what the actual blouse would look like.it has
+        text written on it in a black cursive language which looks great on a
+        white color.
+      </p>
+      Fabric: <br />
+      Art silk is manufactured by synthetic fibres like rayon. It's light in
+      weight and is soft on the skin for comfort in summers.Art silk is
+      manufactured by synthetic fibres like rayon. It's light in weight and is
+      soft on the skin for comfort in summers. <br />Size & Fit:<br />
+      The model (height 5'8") is wearing a size S <br />Material & Care:
+      <br />Top fabric: pure cotton<br />
+      Bottom fabric: pure cotton <br />Hand-wash
+    </div>
+    <div id="spec" class="container tab-pane fade">
+      <br />
+      <h3>Menu 1</h3>
+      <p>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div id="video" class="container tab-pane fade">
+      <br />
+      <h3>Menu 2</h3>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam.
+      </p>
+    </div>
+    <div id="write" class="container tab-pane fade">
+      <br />
+      <h3>Menu 2</h3>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam.
+      </p>
+    </div>
+  </div>
+</div>

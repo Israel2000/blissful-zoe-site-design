@@ -1,0 +1,54 @@
+.flex-container {
+  display: flex;
+}
+
+.left-column {
+  flex: 1; /* Takes up 20% of the width */
+  flex-basis: 20%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.right-column {
+  flex: 4; /* Takes up 80% of the width */
+  flex-basis: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+// accord csss
+.accordion-button:focus {
+  background-color: #bff3d0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #89f7ad;
+}
+
+.card {
+  height: 300px;
+}
+
+.card {
+  padding-top: 10px;
+  border: none; /* Remove border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+//customer sugguestions cards
+.customer-card {
+  height: 200px;
+  border: 1px solid #89f7ad;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #89f7ad;
+  border: none !important;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
