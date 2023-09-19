@@ -39,11 +39,12 @@
 .nav-pills .nav-link {
   background-color: transparent; /* Remove background */
   margin-right: 20px; /* Add space between li elements */
-  color: #4fdd7e;
+  color: black;
 }
 
 .nav-pills .nav-link.active {
   border-bottom-color: transparent; /* Remove bottom border for active tab */
   border-bottom: 3px solid #f1cd0a;
   border-radius: 0px;
+  font-weight: bold;
 }

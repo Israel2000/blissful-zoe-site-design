@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./shopping-cart.component.scss']
 })
 export class ShoppingCartComponent {
+quantity: number = 1;
+  
+  decrement() {
+    if (this.quantity > 1) {
+      this.quantity--;
+    }
+  }
 
+  increment() {
+    this.quantity++;
+  }
 }

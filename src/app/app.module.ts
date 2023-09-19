@@ -24,7 +24,6 @@ import { ToastrModule } from 'ngx-toastr';
 import { FaqComponent } from './faq/faq.component';
 import { MainDeptComponent } from './main-dept/main-dept.component';
 import { ProductSelectionComponent } from './product-selection/product-selection.component';
-import { AddedToCartComponent } from './added-to-cart/added-to-cart.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 const firebaseConfig = {
@@ -48,7 +47,6 @@ const firebaseConfig = {
     FaqComponent,
     MainDeptComponent,
     ProductSelectionComponent,
-    AddedToCartComponent,
     ShoppingCartComponent,
   ],
   imports: [

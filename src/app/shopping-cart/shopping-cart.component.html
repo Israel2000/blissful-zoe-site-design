@@ -1,76 +1,105 @@
-<div class="container mt-2">
+<div class="gray-background mb-2">
+  <h5>Shopping Cart</h5>
+</div>
+
+<div class="container bg-white p-4" style="border-radius: 5px">
   <div class="row">
-    <div class="col-md-8 mb-4">
-      <div class="card">
-        <div class="card-body" style="height: 144px">
-          <h5 class="card-title">Shopping Cart (2)</h5>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineCheckbox1"
-              value="option1"
-            />
-            <label class="form-check-label" for="inlineCheckbox1"
-              >Select All</label
+    <!-- First section with 33% width -->
+    <div class="col-md-4">
+      <div class="section">
+        <!-- Content for the first section -->
+        <h4>Item</h4>
+        <img
+          src="assets/rocky-mountain-waterfall-lake-7hyyokcanm637utd.jpg"
+          width="200px"
+        />
+      </div>
+    </div>
+    <!-- Second section with 66% width -->
+    <div class="col-md-8">
+      <div class="section">
+        <!-- Content for the second section -->
+        <h4>Desc</h4>
+        <p>
+          A ABIGAIL Center Console Armrest Cover for 2008 2009 2010 2011 2012
+          Honda Accord Auto Leather Suture Console Lid Cover Replacement (Black)
+        </p>
+        <p>$23.99</p>
+        <div class="mt-2">
+          <label for="quantity">Quantity:</label>
+          <div class="input-group mt-2" style="width: 127px">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              (click)="decrement()"
             >
+              -
+            </button>
+            <input
+              type="number"
+              class="form-control text-center"
+              id="quantity"
+              [(ngModel)]="quantity"
+              min="1"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              (click)="increment()"
+            >
+              +
+            </button>
           </div>
-          <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-4">
-                <button class="btn btn-primary btn-block no-padding">
-                  Button 1
-                </button>
-              </div>
-              <div class="col-sm-4">
-                <button class="btn btn-secondary btn-block no-padding">
-                  Button 2
-                </button>
-              </div>
-              <div class="col-sm-4">
-                <button class="btn btn-success btn-block no-padding">
-                  Button 3
-                </button>
+
+          <button
+            class="btn mt-4"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            style="background-color: #89f7ad; color: white; width: 175px"
+          >
+            Add to Cart
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Added to Cart
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Your item added has been added to cart.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Continue Shopping
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Go to Cart
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Summary</h5>
-          <p class="card-text">Total $-</p>
-          <a href="#" class="btn btn-primary">CheckOut(2)</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card 1</h5>
-          <p class="card-text">
-            This card is responsive and has a width of 500px max.
-          </p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card 2</h5>
-          <p class="card-text">
-            This card is responsive and has a width of 500px max.
-          </p>
-          <a href="#" class="btn btn-primary">Learn More</a>
         </div>
       </div>
     </div>

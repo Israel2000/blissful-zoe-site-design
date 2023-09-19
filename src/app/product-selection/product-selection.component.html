@@ -18,10 +18,7 @@
 <div class="container mb-4">
   <div class="row">
     <div class="col-md-6 mt-4">
-      <div
-        class="bg-white shadow p-4"
-        style="height: 500px; border-radius: 5px"
-      >
+      <div class="bg-white p-4" style="height: 500px; border-radius: 5px">
         <div class="container">
           <div class="d-flex justify-content-center">
             <img
@@ -36,7 +33,7 @@
     <div class="col-md-6 mt-4">
       <div class="">
         <!-- <div class="bg-white shadow" style="border-radius: 5px"></div> -->
-        <div class="bg-white shadow" style="height: 580px; border-radius: 5px">
+        <div class="bg-white" style="height: 580px; border-radius: 5px">
           <div class="container">
             <h4 class="p-2">MEN BLUE SHIRT</h4>
             <label class="p-2">Price:</label>
@@ -93,12 +90,56 @@
                   +
                 </button>
               </div>
+
               <button
                 class="btn mt-5"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 style="background-color: #89f7ad; color: white; width: 175px"
               >
                 Add to Cart
               </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Added to Cart
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Your item added has been added to cart.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Continue Shopping
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Go to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 .foooter-css {
-  background-color: #deffe9;
+  background-color: #4fdd7e;
   // height: 800px;
   width: 100%;
   margin: 0;
@@ -40,4 +40,18 @@ p {
 
 ul {
   list-style-type: none;
+}
+// free shipping sections
+
+.flex-row {
+  display: flex;
+  align-items: center; /* Center-align the content vertically */
+}
+
+.flex-column {
+  flex: 1;
+  padding: 10px;
+  background-color: #f0f0f09c;
+  // border: 1px solid #ddd;
+  text-align: center; /* Center-align the content horizontally */
 }
