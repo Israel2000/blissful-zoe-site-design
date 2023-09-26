@@ -25,6 +25,7 @@ import { FaqComponent } from './faq/faq.component';
 import { MainDeptComponent } from './main-dept/main-dept.component';
 import { ProductSelectionComponent } from './product-selection/product-selection.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { AccountLoginPageComponent } from './account-login-page/account-login-page.component';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDCuyQ4zAM9vjVHiQIT4RdMCQ4HdVtZICg',
@@ -48,6 +49,7 @@ const firebaseConfig = {
     MainDeptComponent,
     ProductSelectionComponent,
     ShoppingCartComponent,
+    AccountLoginPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -86,7 +86,7 @@
   }
 }
 .active {
-  color: #90c402 !important;
+  color: #89f7ad !important;
 }
 
 li.nav-item {
@@ -117,7 +117,7 @@ li.nav-item {
 
 /* Change bottom border and background color on hover */
 .nav-list li:hover {
-  border-bottom-color: red; /* Change bottom border color to red */
+  border-bottom-color: #89f7ad; /* Change bottom border color to red */
   background-color: lightgray; /* Change background color on hover */
 }
 
@@ -129,7 +129,7 @@ li.nav-item {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #90c402;
+  color: #89f7ad;
 }
 
 .mat-toolbar-single-row {
@@ -170,5 +170,9 @@ li.nav-item {
     font-size: 15px;
     margin-left: 10px;
     font-size: 11px;
+  }
+  .flex-item {
+    padding: 3px;
+    margin-top: 10px;
   }
 }

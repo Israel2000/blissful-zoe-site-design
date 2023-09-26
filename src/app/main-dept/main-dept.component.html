@@ -1,63 +1,78 @@
+<style>
+  .custom-card {
+    width: 210px;
+    /* */
+  }
+</style>
+
 <div class="flex-container">
   <div class="left-column">
-    Left Column
+    <!-- Left Column -->
     <div id="accordion">
       <div class="accordion-item">
         <h2 class="accordion-header" id="section1">
-          <button
-            class="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapse1"
-          >
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+            (click)="updateText()">
             MEN
           </button>
         </h2>
-        <div
-          id="collapse1"
-          class="accordion-collapse collapse show"
-          aria-labelledby="section1"
-        >
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="section1">
+          <div class="accordion-body">Jewely</div>
+          <div class="accordion-body">Hats</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="section2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse2">
+            WOMEN
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="section2">
+          <div class="accordion-body">Content for Section 2</div>
           <div class="accordion-body">Jewely</div>
           <div class="accordion-body">Accessories</div>
         </div>
       </div>
 
       <div class="accordion-item">
-        <h2 class="accordion-header" id="section2">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapse2"
-          >
-            WOMEN
+        <h2 class="accordion-header" id="section1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            KIDS
           </button>
         </h2>
-        <div
-          id="collapse2"
-          class="accordion-collapse collapse"
-          aria-labelledby="section2"
-        >
-          <div class="accordion-body">Content for Section 2</div>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="section1">
+          <div class="accordion-body">Jewely</div>
+          <div class="accordion-body">Accessories</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="section1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            ACCESSORIES
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="section1">
           <div class="accordion-body">Jewely</div>
           <div class="accordion-body">Accessories</div>
         </div>
       </div>
     </div>
   </div>
-  <div class="right-column">
-    right Column
-    <h3>Men Selections</h3>
+  <div class="right-column" data-bs-spy="scroll" data-bs-target="#navbar-example2">
+    <!-- right Column -->
+
     <div class="container">
+      <h3 id="">Men Selections</h3>
       <div class="row">
         <div class="col-md-6 col-lg-3">
           <div class="card">
             <div class="card-body d-flex flex-column">
               <p class="card-text flex-grow-1">Some text describing Card 1.</p>
               <div class="d-flex justify-content-between align-items-end">
-                <span class="card-text">Card 1</span
-                ><button class="btn btn-primary">Add to Cart</button>
+                <span class="card-text">Card 1</span><button class="btn btn-primary">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -89,8 +104,7 @@
             <div class="card-body d-flex flex-column">
               <p class="card-text flex-grow-1">Some text describing Card 4.</p>
               <div class="d-flex justify-content-between align-items-end">
-                <span class="card-text">Card 4</span
-                ><button class="btn btn-primary">Add to Cart</button>
+                <span class="card-text">Card 4</span><button class="btn btn-primary">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -102,8 +116,7 @@
             <div class="card-body d-flex flex-column">
               <p class="card-text flex-grow-1">Some text describing Card 5.</p>
               <div class="d-flex justify-content-between align-items-end">
-                <span class="card-text">Card 5</span
-                ><button class="btn btn-primary">Add to Cart</button>
+                <span class="card-text">Card 5</span><button class="btn btn-primary">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -124,8 +137,7 @@
             <div class="card-body d-flex flex-column">
               <p class="card-text flex-grow-1">Some text describing Card 7.</p>
               <div class="d-flex justify-content-between align-items-end">
-                <span class="card-text">Card 7</span
-                ><button class="btn btn-primary">Add to Cart</button>
+                <span class="card-text">Card 7</span><button class="btn btn-primary">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -135,8 +147,98 @@
             <div class="card-body d-flex flex-column">
               <p class="card-text flex-grow-1">Some text describing Card 8.</p>
               <div class="d-flex justify-content-between align-items-end">
-                <span class="card-text">Card 8</span
-                ><button class="btn btn-primary">Add to Cart</button>
+                <span class="card-text">Card 8</span><button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h3 id="">Women Selections</h3>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Some text describing Card 1.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span class="card-text">Card 1</span><button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Some text describing Card 2.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span class="card-text"></span>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Some text describing Card 3.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span class="card-text">Add to Cart</span>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Some text describing Card 4.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span class="card-text">Card 4</span><button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Some text describing Card 5.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span class="card-text">Card 5</span><button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Some text describing Card 6.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span class="card-text">Card 6</span>
+                <button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Some text describing Card 7.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span class="card-text">Card 7</span><button class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card mt-4">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Some text describing Card 8.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span class="card-text">Card 8</span><button class="btn btn-primary">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -146,15 +248,10 @@
   </div>
 </div>
 
-<div>
-  <h2>Customer Selections</h2>
-  <style>
-    .custom-card {
-      width: 210px;
-      /* */
-    }
-  </style>
+<!-- scrollspy vertical menu -->
 
+<!-- <div>
+  <h2>Customer Selections</h2>
   <div class="container mb-4">
     <div class="row">
       <div class="col-md-1 custom-card">
@@ -162,8 +259,7 @@
           <div class="card-body d-flex flex-column">
             <p class="card-text flex-grow-1">Some text describing Card 8.</p>
             <div class="d-flex justify-content-between align-items-end">
-              <span class="card-text">Card 8</span
-              ><button class="btn btn-primary">Add to Cart</button>
+              <span class="card-text">Card 8</span><button class="btn btn-primary">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -173,8 +269,7 @@
           <div class="card-body d-flex flex-column">
             <p class="card-text flex-grow-1">Some text describing Card 8.</p>
             <div class="d-flex justify-content-between align-items-end">
-              <span class="card-text">Card 8</span
-              ><button class="btn btn-primary">Add to Cart</button>
+              <span class="card-text">Card 8</span><button class="btn btn-primary">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -184,8 +279,7 @@
           <div class="card-body d-flex flex-column">
             <p class="card-text flex-grow-1">Some text describing Card 8.</p>
             <div class="d-flex justify-content-between align-items-end">
-              <span class="card-text">Card 8</span
-              ><button class="btn btn-primary">Add to Cart</button>
+              <span class="card-text">Card 8</span><button class="btn btn-primary">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -195,8 +289,7 @@
           <div class="card-body d-flex flex-column">
             <p class="card-text flex-grow-1">Some text describing Card 8.</p>
             <div class="d-flex justify-content-between align-items-end">
-              <span class="card-text">Card 8</span
-              ><button class="btn btn-primary">Add to Cart</button>
+              <span class="card-text">Card 8</span><button class="btn btn-primary">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -206,8 +299,7 @@
           <div class="card-body d-flex flex-column">
             <p class="card-text flex-grow-1">Some text describing Card 8.</p>
             <div class="d-flex justify-content-between align-items-end">
-              <span class="card-text">Card 8</span
-              ><button class="btn btn-primary">Add to Cart</button>
+              <span class="card-text">Card 8</span><button class="btn btn-primary">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -217,14 +309,11 @@
           <div class="card-body d-flex flex-column">
             <p class="card-text flex-grow-1">Some text describing Card 8.</p>
             <div class="d-flex justify-content-between align-items-end">
-              <span class="card-text">Card 8</span
-              ><button class="btn btn-primary">Add to Cart</button>
+              <span class="card-text">Card 8</span><button class="btn btn-primary">Add to Cart</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<!-- <app-product-selection></app-product-selection> -->
+</div> -->

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-dept.component.scss']
 })
 export class MainDeptComponent {
+  public displayText = '';
 
+  public updateText() {
+    this.displayText = 'Button Clicked'
+  }
 }

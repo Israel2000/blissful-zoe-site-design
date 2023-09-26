@@ -1,8 +1,7 @@
 .image-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 600px; /* Adjust as needed */
+  width: 100%;
 }
 
 .centered-image {
@@ -13,15 +12,16 @@
 .card-title,
 .welcome-text {
   font-family: "Borel", cursive;
+  text-align: center;
 }
 
 .text-green {
   color: #29a621;
 }
 
-h2 {
-  margin-left: 73px;
-}
+// h2 {
+//   margin-left: 73px;
+// }
 
 // <!--shiipend info-->
 /* Custom CSS for centered flexbox row */
@@ -40,38 +40,38 @@ h2 {
 // ------------end
 
 @media (max-width: 1024px) {
-  .responsive-text {
-    font-size: 40px;
-  }
+  // .responsive-text {
+  //   font-size: 40px;
+  // }
 }
 
 @media (max-width: 768px) {
-  .responsive-text {
-    font-size: 29px;
-    text-align: left;
-  }
-  .contact-text {
-    font-size: 18px;
-  }
-  .welcome-css {
-    height: 580px;
-    line-height: 1.5;
-  }
+  // .responsive-text {
+  //   font-size: 29px;
+  //   text-align: left;
+  // }
+  // .contact-text {
+  //   font-size: 18px;
+  // }
+  // .welcome-css {
+  //   height: 580px;
+  //   line-height: 1.5;
+  // }
 }
 
 @media (max-width: 425px) {
-  .responsive-text {
-    font-size: 32px;
-  }
-  .contact-text {
-    font-size: 18px;
-  }
-  .custom-button {
-    padding: 0px;
-    text-align: center;
-    padding: 0px 15px;
-  }
-  .mt-5 {
-    margin-bottom: 10px;
-  }
+  // .responsive-text {
+  //   font-size: 32px;
+  // }
+  //   .contact-text {
+  //     font-size: 18px;
+  //   }
+  //   .custom-button {
+  //     padding: 0px;
+  //     text-align: center;
+  //     padding: 0px 15px;
+  //   }
+  //   .mt-5 {
+  //     margin-bottom: 10px;
+  //   }
 }
