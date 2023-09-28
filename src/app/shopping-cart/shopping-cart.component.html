@@ -8,11 +8,8 @@
     <div class="col-md-4">
       <div class="section">
         <!-- Content for the first section -->
-        <h4>Item</h4>
-        <img
-          src="assets/rocky-mountain-waterfall-lake-7hyyokcanm637utd.jpg"
-          width="200px"
-        />
+        <h4 class="fw-light">Item</h4>
+        <img src="assets/mendress1.jpg" width="200px" />
       </div>
     </div>
     <!-- Second section with 66% width -->
@@ -28,78 +25,81 @@
         <div class="mt-2">
           <label for="quantity">Quantity:</label>
           <div class="input-group mt-2" style="width: 127px">
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              (click)="decrement()"
-            >
+            <button class="btn btn-outline-secondary" type="button" (click)="decrement()">
               -
             </button>
-            <input
-              type="number"
-              class="form-control text-center"
-              id="quantity"
-              [(ngModel)]="quantity"
-              min="1"
-            />
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              (click)="increment()"
-            >
+            <input type="number" class="form-control text-center" id="quantity" [(ngModel)]="quantity" min="1" />
+            <button class="btn btn-outline-secondary" type="button" (click)="increment()">
               +
             </button>
           </div>
 
-          <button
-            class="btn mt-4"
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            style="background-color: #89f7ad; color: white; width: 175px"
-          >
-            Add to Cart
+          <button class="btn mt-4 checkoutBtn" type="button" data-bs-toggle="modal" data-bs-target="#checkoutModel">
+            CheckOut > >
           </button>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
+          <!-- Modal - to go to the cart popup -->
+          <div class="modal fade" id="checkoutModel" tabindex="-1" aria-labelledby="#checkoutModellLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Added to Cart
+                  <h5 class="modal-title" id="checkoutModellLabel">
+                    Thanks you, We recieved your order! <br />
+                    <span class="h6 fw-light">Confirmation #12444</span>
                   </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
                 <div class="modal-body">
-                  Your item added has been added to cart.
+                  <br />
+                  <span class="fw-light">Shop Again!</span> <br />
+                  Checkout other products on our website.
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <!-- Content for the first column -->
+                            <img src="assets/manPic-homepage.jpg" width="100px" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <!-- Content for the second column -->
+                            <img src="assets/womanPic-homepage.jpg" width="100px" />
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <!-- Content for the third column -->
+                            <img src="assets/makeup-pic.jpg" width="100px" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
                 <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" routerLink="/main-dept">
                     Continue Shopping
                   </button>
-                  <button type="button" class="btn btn-primary">
+                  <!-- <button type="button" class="btn btn-primary">
                     Go to Cart
-                  </button>
+                  </button> -->
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- thank you for buying - when checkout clicked -->
+
         </div>
       </div>
     </div>

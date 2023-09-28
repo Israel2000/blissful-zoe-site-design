@@ -21,11 +21,7 @@
       <div class="bg-white p-4" style="height: 500px; border-radius: 5px">
         <div class="container">
           <div class="d-flex justify-content-center">
-            <img
-              src="assets/mendress1.jpg"
-              alt="Centered Image"
-              width="400px"
-            />
+            <img src="assets/mendress1.jpg" alt="Centered Image" width="400px" />
           </div>
         </div>
       </div>
@@ -68,72 +64,39 @@
             <div class="container mt-2">
               <label for="quantity">Quantity:</label>
               <div class="input-group mt-2" style="width: 127px">
-                <button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  (click)="decrement()"
-                >
+                <button class="btn btn-outline-secondary" type="button" (click)="decrement()">
                   -
                 </button>
-                <input
-                  type="number"
-                  class="form-control text-center"
-                  id="quantity"
-                  [(ngModel)]="quantity"
-                  min="1"
-                />
-                <button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  (click)="increment()"
-                >
+                <input type="number" class="form-control text-center" id="quantity" [(ngModel)]="quantity" min="1" />
+                <button class="btn btn-outline-secondary" type="button" (click)="increment()">
                   +
                 </button>
               </div>
 
-              <button
-                class="btn mt-5"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                style="background-color: #89f7ad; color: white; width: 175px"
-              >
+              <button class="btn mt-5" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                style="background-color: #89f7ad; color: white; width: 175px">
                 Add to Cart
               </button>
 
               <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel">
                         Added to Cart
                       </h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       Your item added has been added to cart.
                     </div>
                     <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Continue Shopping
                       </button>
-                      <button type="button" class="btn btn-primary">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal" routerLink="/shoppingCart">
                         Go to Cart
                       </button>
                     </div>
@@ -156,9 +119,7 @@
   <!-- Nav pills -->
   <ul class="nav nav-pills" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" data-bs-toggle="pill" href="#details"
-        >DETAILS</a
-      >
+      <a class="nav-link active" data-bs-toggle="pill" href="#details">DETAILS</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="pill" href="#spec">SPECIFICATION</a>

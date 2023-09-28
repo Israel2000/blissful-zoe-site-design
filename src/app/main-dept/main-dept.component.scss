@@ -47,6 +47,13 @@
   border: none !important;
 }
 
+//image css
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes sure the container takes the full viewport height */
+}
 //scrollspy css
 
 @media (max-width: 600px) {
